@@ -1,38 +1,39 @@
-//Dependencies
-var express = require('express');
-var methodOverride = require('method-override');
-var bodyParser = require('body-parser');
+// *****************************************************************************
+// Server.js - This file is the initial starting point for the Node/Express server.
+//
+// ******************************************************************************
+// *** Dependencies
+// =============================================================
+var express = require("express");
+var bodyParser = require("body-parser");
 
-// Create an instance of the express app.
+// Sets up the Express App
+// =============================================================
 var app = express();
-
-// set port to 3000 or whatever heroku (deployment site) sets it to
 var PORT = process.env.PORT || 3000;
 
-// express middleware needed for serving static files. For more details
-// see here: http://expressjs.com/en/starter/static-files.html
-app.use(express.static(__dirname + '/public'));
+// Requiring our models for syncing
+var db = require("./models");
 
-/// bodyparsers 
-app.use(bodyParser.urlencoded({ extended: true }));
+// Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
-app.use(bodyParser.json({ type: 'application/*+json' }));
-app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
-app.use(bodyParser.text({ type: 'text/html' }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// override with POST having ?_method=DELETE or PUT
-app.use(methodOverride('_method'));
+// Static directory
+app.use(express.static("public"));
 
-// Set Handlebars as the default templating engine.
-var exphbs = require('express-handlebars');
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+// Routes
+// =============================================================
+require("./routes/html-routes.js")(app);
+require("./routes/spotify-api-routes.js")(app);
+require("./routes/user-api-routes.js")(app);
 
-// now import the routes
-var routes = require('./controllers/audioAura_controller.js');
-app.use('/', routes);
-
-// Initiate the listener.
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+// Syncing our sequelize models and then starting our Express app
+// =============================================================
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });
