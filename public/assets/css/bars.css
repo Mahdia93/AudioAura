@@ -1,6 +1,6 @@
 #colors {
 	background-color: black;
-	width: 552px;
+	width: 590px;
 	height:380px;
 }
 
@@ -100,7 +100,7 @@
 
 #text {
 	margin-top: 5px;
-	width: 550px;
+	width: 590px;
 	height: 40px;
 	border-style: solid;
 	border-color: black;
@@ -116,7 +116,12 @@
 
 }
 
-
+.topheader {
+	background-color: black;
+	color: white;
+	width: 590px;
+	padding-left: 5px;
+}
 
 #wordCouldTitle {
 	width: 900px;
@@ -124,4 +129,8 @@
 	text-align: center;
 	margin: 30px;
 
+}
+
+#redRect {
+	margin-left: 29px;
 }
