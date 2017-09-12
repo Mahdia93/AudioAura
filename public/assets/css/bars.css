@@ -10,76 +10,125 @@
 	opacity: .6;
 	margin-left: 10px;
 	display: inline-block;
+
 }
 
-.redBlocks {
+.bars:hover {
+	opacity: 1
+}
+
+.redBlock {
 	width: 40px;
 	height: 20px;
 	background-color: red;
 	margin-top: 5px;
 }
 
-.pinkBlocks {
+.redBlocks:hover {
+	box-shadow: 0 0 20px red;
+}
+
+.pinkBlock {
 	width: 40px;
 	height: 20px;
 	background-color: pink;
 	margin-top: 5px;
 }
 
-.orangeBlocks {
+.pinkBlocks:hover {
+	box-shadow: 0 0 20px pink;
+}
+
+
+.orangeBlock {
 	width: 40px;
 	height: 20px;
 	background-color: orange;
 	margin-top: 5px;
 }
 
-.yellowBlocks {
+.orangeBlocks:hover {
+	box-shadow: 0 0 20px orange;
+}
+
+
+.yellowBlock {
 	width: 40px;
 	height: 20px;
 	background-color: yellow;
 	margin-top: 5px;
 }
 
-.greenBlocks {
+.yellowBlocks:hover {
+	box-shadow: 0 0 20px yellow;
+}
+
+
+.greenBlock {
 	width: 40px;
 	height: 20px;
-	background-color: green;
+	background-color: #1ed760;
 	margin-top: 5px;
 }
 
-.blueBlocks {
+.greenBlocks:hover {
+	box-shadow: 0 0 20px #1ed760;
+}
+
+
+.blueBlock {
 	width: 40px;
 	height: 20px;
-	background-color: blue;
+	background-color: #3EABFD;
 	margin-top: 5px;
 }
 
-.purpleBlocks {
+.blueBlocks:hover {
+	box-shadow: 0 0 20px #3EABFD;
+}
+
+.purpleBlock {
 	width: 40px;
 	height: 20px;
-	background-color: purple;
+	background-color: #A855FC;
 	margin-top: 5px;
 }
 
-.brownBlocks {
+.purpleBlocks:hover {
+	box-shadow: 0 0 20px #A855FC;
+}
+
+.brownBlock {
 	width: 40px;
 	height: 20px;
-	background-color: #785631;
+	background-color: #906638;
 	margin-top: 5px;
 }
 
-.whiteBlocks {
+.brownBlocks:hover {
+	box-shadow: 0 0 20px #906638;
+}
+
+.whiteBlock {
 	width: 40px;
 	height: 20px;
 	background-color: white;
 	margin-top: 5px;
 }
 
-.greyBlocks {
+.whiteBlocks:hover {
+	box-shadow: 0 0 20px white;
+}
+
+.greyBlock {
 	width: 40px;
 	height: 20px;
-	background-color: #666666;
+	background-color: #808080;
 	margin-top: 5px;
+}
+
+.greyBlocks:hover {
+	box-shadow: 0 0 20px #cccccc;
 }
 
 .blackBlocks {
@@ -94,9 +143,7 @@
 	background-color: black;
 }
 
-.bars:hover {
-	opacity: 1
-}
+
 
 #text {
 	margin-top: 5px;
@@ -133,4 +180,8 @@
 
 #redRect {
 	margin-left: 29px;
+}
+
+.currentMood {
+
 }
