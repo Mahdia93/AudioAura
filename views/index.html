@@ -22,6 +22,8 @@
 
     <!-- Custom styles for this template  -->
     <link href="../public/assets/css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../public/assets/css/bars.css">
+
 
   </head>
 
@@ -207,7 +209,158 @@
         <div class="row">
           <div class="col-lg-8">
            
-        <img src="../public/assets/img/colortheory.jpg" alt="Color" width="100%" height="100%">    
+        <h2>What color mood are you?</h2>
+
+<div id="colors">
+    <!-- red -->
+    <div id="redRect" class="bars">
+        <div style="height: 150px; width: 40px;"></div>
+        <div class="redBlocks"></div>
+        <div class="redBlocks"></div>
+        <div class="redBlocks"></div>
+        <div class="redBlocks"></div>
+        <div class="redBlocks"></div>
+        <div class="redBlocks"></div>
+        <div class="redBlocks"></div>
+        <div class="redBlocks"></div>
+        <div class="redBlocks"></div>
+    </div>
+
+    <!-- pink -->
+    <div id="pinkRect" class="bars">
+        <div style="height: 200px; width: 40px;"></div>
+        <div class="pinkBlocks"></div>
+        <div class="pinkBlocks"></div>
+        <div class="pinkBlocks"></div>
+        <div class="pinkBlocks"></div>
+        <div class="pinkBlocks"></div>
+        <div class="pinkBlocks"></div>
+        <div class="pinkBlocks"></div>
+    </div>
+
+    <!-- orange -->
+        <div id="orangeRect" class="bars">
+        <div style="height: 100px; width: 40px;"></div>
+        <div class="orangeBlocks"></div>
+        <div class="orangeBlocks"></div>
+        <div class="orangeBlocks"></div>
+        <div class="orangeBlocks"></div>
+        <div class="orangeBlocks"></div>
+        <div class="orangeBlocks"></div>
+        <div class="orangeBlocks"></div>
+        <div class="orangeBlocks"></div>
+        <div class="orangeBlocks"></div>
+        <div class="orangeBlocks"></div>
+        <div class="orangeBlocks"></div>
+    </div>
+
+    <!-- yellow -->
+        <div id="yellowRect" class="bars">
+        <div style="height: 50px; width: 40px;"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+        <div class="yellowBlocks"></div>
+    </div>
+
+    <!-- green -->
+        <div id="greenRect" class="bars">
+        <div style="height: 125px; width: 40px;"></div>
+        <div class="greenBlocks"></div>
+        <div class="greenBlocks"></div>
+        <div class="greenBlocks"></div>
+        <div class="greenBlocks"></div>
+        <div class="greenBlocks"></div>
+        <div class="greenBlocks"></div>
+        <div class="greenBlocks"></div>
+        <div class="greenBlocks"></div>
+        <div class="greenBlocks"></div>
+        <div class="greenBlocks"></div>
+    </div>
+
+    <!-- blue -->
+        <div id="blueRect" class="bars">
+        <div style="height: 175px; width: 40px;"></div>
+        <div class="blueBlocks"></div>
+        <div class="blueBlocks"></div>
+        <div class="blueBlocks"></div>
+        <div class="blueBlocks"></div>
+        <div class="blueBlocks"></div>
+        <div class="blueBlocks"></div>
+        <div class="blueBlocks"></div>
+        <div class="blueBlocks"></div>
+    </div>
+
+    <!-- purple -->
+        <div id="purpleRect" class="bars">
+        <div style="height: 100px; width: 40px;"></div>
+        <div class="purpleBlocks"></div>
+        <div class="purpleBlocks"></div>
+        <div class="purpleBlocks"></div>
+        <div class="purpleBlocks"></div>
+        <div class="purpleBlocks"></div>
+        <div class="purpleBlocks"></div>
+        <div class="purpleBlocks"></div>
+        <div class="purpleBlocks"></div>
+        <div class="purpleBlocks"></div>
+        <div class="purpleBlocks"></div>
+        <div class="purpleBlocks"></div>
+    </div>
+
+    <!-- brown -->
+        <div id="brownRect" class="bars">
+        <div style="height: 125px; width: 40px;"></div>
+        <div class="brownBlocks"></div>
+        <div class="brownBlocks"></div>
+        <div class="brownBlocks"></div>
+        <div class="brownBlocks"></div>
+        <div class="brownBlocks"></div>
+        <div class="brownBlocks"></div>
+        <div class="brownBlocks"></div>
+        <div class="brownBlocks"></div>
+        <div class="brownBlocks"></div>
+        <div class="brownBlocks"></div>
+    </div>
+
+    <!-- white -->
+        <div id="whiteRect" class="bars">
+        <div style="height: 150px; width: 40px;"></div>
+        <div class="whiteBlocks"></div>
+        <div class="whiteBlocks"></div>
+        <div class="whiteBlocks"></div>
+        <div class="whiteBlocks"></div>
+        <div class="whiteBlocks"></div>
+        <div class="whiteBlocks"></div>
+        <div class="whiteBlocks"></div>
+        <div class="whiteBlocks"></div>
+        <div class="whiteBlocks"></div>
+    </div>
+
+    <!-- grey -->
+        <div id="greyRect" class="bars">
+        <div style="height: 150px; width: 40px;"></div>
+        <div class="greyBlocks"></div>
+        <div class="greyBlocks"></div>
+        <div class="greyBlocks"></div>
+        <div class="greyBlocks"></div>
+        <div class="greyBlocks"></div>
+        <div class="greyBlocks"></div>
+        <div class="greyBlocks"></div>
+        <div class="greyBlocks"></div>
+        <div class="greyBlocks"></div>
+    </div>
+
+</div>
+<div id="text"><p class="moodText"></p></div>   
           </div>
 
           <div class="col-lg-4 spotify" >
