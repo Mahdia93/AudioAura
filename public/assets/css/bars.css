@@ -1,0 +1,127 @@
+#colors {
+	background-color: black;
+	width: 552px;
+	height:380px;
+}
+
+.bars {
+	width:40px;
+	height:400px;
+	opacity: .6;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.redBlocks {
+	width: 40px;
+	height: 20px;
+	background-color: red;
+	margin-top: 5px;
+}
+
+.pinkBlocks {
+	width: 40px;
+	height: 20px;
+	background-color: pink;
+	margin-top: 5px;
+}
+
+.orangeBlocks {
+	width: 40px;
+	height: 20px;
+	background-color: orange;
+	margin-top: 5px;
+}
+
+.yellowBlocks {
+	width: 40px;
+	height: 20px;
+	background-color: yellow;
+	margin-top: 5px;
+}
+
+.greenBlocks {
+	width: 40px;
+	height: 20px;
+	background-color: green;
+	margin-top: 5px;
+}
+
+.blueBlocks {
+	width: 40px;
+	height: 20px;
+	background-color: blue;
+	margin-top: 5px;
+}
+
+.purpleBlocks {
+	width: 40px;
+	height: 20px;
+	background-color: purple;
+	margin-top: 5px;
+}
+
+.brownBlocks {
+	width: 40px;
+	height: 20px;
+	background-color: #785631;
+	margin-top: 5px;
+}
+
+.whiteBlocks {
+	width: 40px;
+	height: 20px;
+	background-color: white;
+	margin-top: 5px;
+}
+
+.greyBlocks {
+	width: 40px;
+	height: 20px;
+	background-color: #666666;
+	margin-top: 5px;
+}
+
+.blackBlocks {
+	width: 40px;
+	height: 90px;
+	background-color: black;
+}
+
+.blackBlock {
+	width: 40px;
+	height: 20px;
+	background-color: black;
+}
+
+.bars:hover {
+	opacity: 1
+}
+
+#text {
+	margin-top: 5px;
+	width: 550px;
+	height: 40px;
+	border-style: solid;
+	border-color: black;
+    border-width: 2px;
+    text-align: center;
+}
+
+.moodText {
+	font-size: 20px;
+	position: relative;
+	bottom: 17px;
+	
+
+}
+
+
+
+#wordCouldTitle {
+	width: 900px;
+	height: 30px;
+	text-align: center;
+	margin: 30px;
+
+}
