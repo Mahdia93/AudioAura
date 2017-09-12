@@ -1,0 +1,190 @@
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">A u d i o | A u r a</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+            <a class="nav-link" href="https://accounts.spotify.com/en/authorize?response_type=code&client_id=aa57db780ac34c78aa98edc911ae4125&scope=user-read-private%20user-read-email&redirect_uri=https:%2F%2Fmahdia93.github.io%2FAudioAura%2Fviews%2Findex.html&state=z82x2WmOu32n5LQe" class="btn btn-sp">
+              <i class="fa fa-spotify"></i>
+              <span class="nav-link-text">
+                Spotify Login</span>
+            </a>
+          </li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active">Pick your ~~moo0oOod~~</li>
+        </ol>
+
+        <!-- Icon Cards -->
+        <div class="row">
+          <div class="col-lg-8">
+           
+        <img src="../public/assets/img/colortheory.jpg" alt="Color" width="100%" height="100%">    
+          </div>
+
+          <div class="col-lg-4 spotify" >
+          <iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A2rp5riHULWgrXPsDtsp1ir" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe>
+          </div>
+
+        </div>
+      <!-- feed list -->
+        <div class="card mb-3">
+              <div class="card-header">
+                <i class="fa fa-comments fa-fw"></i>
+                Feed Example
+              </div>
+              <div class="col-lg-12">
+                    <!-- /.panel -->
+                    <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                        
+                           
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Alex</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                             
+                                <li class="left clearfix">
+                                  
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Alex</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm" id="btn-chat">
+                                        Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- /.panel-footer -->
+                    </div>
+                    <!-- /.panel .chat-panel -->
+            </div>
+              <div class="card-footer small text-muted">
+                Update your mood
+              </div>
+            </div>
+        
+
+        <!-- Area Chart Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fa fa-area-chart"></i>
+            Chart Example
+          </div>
+          <div class="card-body">
+            <canvas id="myAreaChart" width="100%" height="30"></canvas>
+          </div>
+          <div class="card-footer small text-muted">
+            Updated yesterday at 11:59 PM
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <!-- Example word cloud -->
+            <div class="card mb-3">
+              <div class="card-header">
+      
+                Word Cloud
+              </div>
+              <div class="card-body">
+                <canvas id="myPieChart" width="100%" height="100"></canvas>
+                <img src="../public/assets/img/stock-vector-design-word-cloud-collage-creative-business-concept-549886417.jpg" alt="Word Cloud">
+              </div>
+              <div class="card-footer small text-muted">
+                Updated yesterday at 11:59 PM
+              </div>
+            </div>
+            <!-- Example Notifications Card -->
+            
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content-wrapper -->
+    </div>
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright &copy; Mahdia Hashimy, Alexander Quiñones, and Andrea Pinillos 2017</small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+      <!-- end bootstrap container -->
+    </div>
