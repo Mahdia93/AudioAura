@@ -23,6 +23,8 @@
     <!-- Custom styles for this template  -->
     <link href="../public/assets/css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../public/assets/css/bars.css">
+    <link rel="stylesheet" type="text/css" href="../public/assets/css/spotifyembed.css">
+
 
 
   </head>
@@ -214,10 +216,8 @@
 <div id="colors">
     <!-- red -->
     <div id="redRect" class="bars">
-        <div style="height: 150px; width: 40px;"></div>
+        <div style="height: 122px; width: 40px;"></div>
           <div class="redBlocks">
-            <div class="redBlock"></div>
-            <div class="redBlock"></div>
             <div class="redBlock"></div>
             <div class="redBlock"></div>
             <div class="redBlock"></div>
@@ -230,9 +230,8 @@
 
     <!-- pink -->
     <div id="pinkRect" class="bars">
-        <div style="height: 200px; width: 40px;"></div>
+        <div style="height: 147px; width: 40px;"></div>
           <div class="pinkBlocks">
-            <div class="pinkBlock"></div>
             <div class="pinkBlock"></div>
             <div class="pinkBlock"></div>
             <div class="pinkBlock"></div>
@@ -244,11 +243,8 @@
 
     <!-- orange -->
         <div id="orangeRect" class="bars">
-        <div style="height: 100px; width: 40px;"></div>
+        <div style="height: 97px; width: 40px;"></div>
           <div class="orangeBlocks">
-            <div class="orangeBlock"></div>
-            <div class="orangeBlock"></div>
-            <div class="orangeBlock"></div>
             <div class="orangeBlock"></div>
             <div class="orangeBlock"></div>
             <div class="orangeBlock"></div>
@@ -262,11 +258,8 @@
 
     <!-- yellow -->
         <div id="yellowRect" class="bars">
-        <div style="height: 50px; width: 40px;"></div>
+        <div style="height: 47px; width: 40px;"></div>
           <div class="yellowBlocks">
-            <div class="yellowBlock"></div>
-            <div class="yellowBlock"></div>
-            <div class="yellowBlock"></div>
             <div class="yellowBlock"></div>
             <div class="yellowBlock"></div>
             <div class="yellowBlock"></div>
@@ -282,11 +275,8 @@
 
     <!-- green -->
         <div id="greenRect" class="bars">
-        <div style="height: 125px; width: 40px;"></div>
+        <div style="height: 122px; width: 40px;"></div>
           <div class="greenBlocks">
-            <div class="greenBlock"></div>
-            <div class="greenBlock"></div>
-            <div class="greenBlock"></div>
             <div class="greenBlock"></div>
             <div class="greenBlock"></div>
             <div class="greenBlock"></div>
@@ -299,10 +289,8 @@
 
     <!-- blue -->
         <div id="blueRect" class="bars">
-        <div style="height: 175px; width: 40px;"></div>
+        <div style="height: 147px; width: 40px;"></div>
           <div class="blueBlocks">
-            <div class="blueBlock"></div>
-            <div class="blueBlock"></div>
             <div class="blueBlock"></div>
             <div class="blueBlock"></div>
             <div class="blueBlock"></div>
@@ -314,11 +302,8 @@
 
     <!-- purple -->
         <div id="purpleRect" class="bars">
-        <div style="height: 100px; width: 40px;"></div>
+        <div style="height: 97px; width: 40px;"></div>
           <div class="purpleBlocks">
-            <div class="purpleBlock"></div>
-            <div class="purpleBlock"></div>
-            <div class="purpleBlock"></div>
             <div class="purpleBlock"></div>
             <div class="purpleBlock"></div>
             <div class="purpleBlock"></div>
@@ -332,11 +317,8 @@
 
     <!-- brown -->
         <div id="brownRect" class="bars">
-        <div style="height: 125px; width: 40px;"></div>
+        <div style="height: 122px; width: 40px;"></div>
           <div class="brownBlocks">
-            <div class="brownBlock"></div>
-            <div class="brownBlock"></div>
-            <div class="brownBlock"></div>
             <div class="brownBlock"></div>
             <div class="brownBlock"></div>
             <div class="brownBlock"></div>
@@ -349,11 +331,8 @@
 
     <!-- white -->
         <div id="whiteRect" class="bars">
-        <div style="height: 150px; width: 40px;"></div>
+        <div style="height: 147px; width: 40px;"></div>
           <div class="whiteBlocks">
-            <div class="whiteBlock"></div>
-            <div class="whiteBlock"></div>
-            <div class="whiteBlock"></div>
             <div class="whiteBlock"></div>
             <div class="whiteBlock"></div>
             <div class="whiteBlock"></div>
@@ -365,9 +344,8 @@
 
     <!-- grey -->
         <div id="greyRect" class="bars">
-        <div style="height: 150px; width: 40px;"></div>
+        <div style="height: 97px; width: 40px;"></div>
           <div class="greyBlocks">
-            <div class="greyBlock"></div>
             <div class="greyBlock"></div>
             <div class="greyBlock"></div>
             <div class="greyBlock"></div>
@@ -380,12 +358,19 @@
     </div>
 
 </div>
-<div id="text"><p class="moodText"></p></div>   
-          </div>
+<div class="commentbox">
+    <div class="moodTextTitle"><p>Why are you feeling this way? <i>(optional)</i></p></div>
+    <div class="commentbox">
+    <div id="text" class="commenttext"><p class="moodText"></p></div>
+  
+    <div class="button">
+    <p><a href="#" class="btn-load-video">Load the playlist  </a></p>
+    </div>
+  </div>
+</div>
 
-          <div class="col-lg-4 spotify" >
-          <iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A2rp5riHULWgrXPsDtsp1ir" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe>
           </div>
+          <div class="col-lg-4 spotify" id="the-player"></div>
 
         </div>
       <!-- feed list -->
@@ -491,6 +476,11 @@
     </div>
     <!-- /.content-wrapper -->
     </div>
+
+    <!-- embed ref code -->
+<textarea class="embed-code" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX7gIoKXt0gmx" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
+
+    <!-- End of embed ref code -->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
@@ -538,6 +528,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="../public/assets/js/sb-admin.min.js"></script>
+    <script src="../public/assets/js/spotifyembed.js"></script>
 
   </body>
 
