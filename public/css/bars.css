@@ -7,37 +7,44 @@
 .bars {
 	width:40px;
 	height:300px;
-	opacity: .6;
+	/*opacity: .6;*/
 	margin-left: 10px;
 	display: inline-block;
+	cursor:pointer;
 
 }
 
-.bars:hover {
+/*.bars:after {
+    opacity: 1;
+} */
+
+/*.bars:hover {
 	opacity: 1
-}
+}*/
 
 .redBlock {
 	width: 40px;
 	height: 20px;
 	background-color: red;
 	margin-top: 5px;
+	opacity: .6;
 }
 
-.redBlocks:hover {
+/*.redBlocks:hover {
 	box-shadow: 0 0 20px red;
-}
+}*/
 
 .pinkBlock {
 	width: 40px;
 	height: 20px;
 	background-color: pink;
 	margin-top: 5px;
+	opacity: .6;
 }
 
-.pinkBlocks:hover {
+/*.pinkBlocks:hover {
 	box-shadow: 0 0 20px pink;
-}
+}*/
 
 
 .orangeBlock {
@@ -45,11 +52,12 @@
 	height: 20px;
 	background-color: orange;
 	margin-top: 5px;
+	opacity: .6;
 }
 
-.orangeBlocks:hover {
+/*.orangeBlocks:hover {
 	box-shadow: 0 0 20px orange;
-}
+}*/
 
 
 .yellowBlock {
@@ -57,11 +65,12 @@
 	height: 20px;
 	background-color: yellow;
 	margin-top: 5px;
+	opacity: .6;
 }
 
-.yellowBlocks:hover {
+/*.yellowBlocks:hover {
 	box-shadow: 0 0 20px yellow;
-}
+}*/
 
 
 .greenBlock {
@@ -69,11 +78,12 @@
 	height: 20px;
 	background-color: #1ed760;
 	margin-top: 5px;
+	opacity: .6;
 }
 
-.greenBlocks:hover {
+/*.greenBlocks:hover {
 	box-shadow: 0 0 20px #1ed760;
-}
+}*/
 
 
 .blueBlock {
@@ -81,55 +91,60 @@
 	height: 20px;
 	background-color: #3EABFD;
 	margin-top: 5px;
+	opacity: .6;
 }
 
-.blueBlocks:hover {
+/*.blueBlocks:hover {
 	box-shadow: 0 0 20px #3EABFD;
-}
+}*/
 
 .purpleBlock {
 	width: 40px;
 	height: 20px;
 	background-color: #A855FC;
 	margin-top: 5px;
+	opacity: .6;
 }
 
-.purpleBlocks:hover {
+/*.purpleBlocks:hover {
 	box-shadow: 0 0 20px #A855FC;
-}
+}*/
 
 .brownBlock {
 	width: 40px;
 	height: 20px;
 	background-color: #906638;
 	margin-top: 5px;
+	opacity: .6;
 }
 
-.brownBlocks:hover {
+/*.brownBlocks:hover {
 	box-shadow: 0 0 20px #906638;
-}
+}*/
 
 .whiteBlock {
 	width: 40px;
 	height: 20px;
 	background-color: white;
 	margin-top: 5px;
+	opacity: .6;
 }
 
-.whiteBlocks:hover {
+/*.whiteBlocks:hover {
 	box-shadow: 0 0 20px white;
-}
+}*/
 
 .greyBlock {
 	width: 40px;
 	height: 20px;
 	background-color: #808080;
 	margin-top: 5px;
+	opacity: .6;
 }
 
-.greyBlocks:hover {
+/*.greyBlocks:hover {
 	box-shadow: 0 0 20px #cccccc;
-}
+}*/
 
 .blackBlocks {
 	width: 40px;
