@@ -5,6 +5,7 @@
 // *** Dependencies
 // =============================================================
 var express = require("express");
+var path = require('path');
 var bodyParser = require("body-parser");
 
 // Sets up the Express App
@@ -22,7 +23,8 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Static directory
-app.use(express.static("public"));
+// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 // =============================================================
