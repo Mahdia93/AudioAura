@@ -11,6 +11,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../views/index.html"));
   });
 
+  app.get("/spotify", function(req, res){
+  	res.render(path.join(__dirname,""))
+  })
+
 
 
 };
