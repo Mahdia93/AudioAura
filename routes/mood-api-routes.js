@@ -41,6 +41,30 @@ module.exports = function(app) {
   else if(req.params.color ==2){
     color = "pink"
   }
+  else if(req.params.color ==3){
+    color = "orange"
+  }
+  else if(req.params.color ==4){
+    color = "yellow"
+  }
+  else if(req.params.color ==5){
+    color = "green"
+  }
+  else if(req.params.color ==6){
+    color = "blue"
+  }
+  else if(req.params.color ==7){
+    color = "purple"
+  }
+  else if(req.params.color ==8){
+    color = "brown"
+  }
+  else if(req.params.color ==9){
+    color = "white"
+  }
+  else if(req.params.color ==10){
+    color = "grey"
+  }
 
   db.Mood.create({
     color: color
@@ -48,9 +72,6 @@ module.exports = function(app) {
 });
 
 }
-
-
-
 //   // PUT route for updating todos. We can get the updated todo data from req.body
 //   app.put("/api/moods", function(req, res) {
 
