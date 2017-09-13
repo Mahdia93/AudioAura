@@ -1,0 +1,13 @@
+.btn-load-video
+	{
+		border: 1px solid #AAA;
+		padding: 3px 5px;
+		text-decoration: none;
+		background: #333;
+		color: #FFF;
+	}
+
+.commenttext {
+
+	display: inline-block;
+}
