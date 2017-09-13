@@ -5,6 +5,10 @@ $('.playlistbutton').click(function() {
             });
 
 $('.playlistbutton').click(function () {
+    console.log("clicked playlistbutton");
+     $.post("/api/moods/" + c, function(data){
+            console.log(data)
+        });
     switch (c) {
         case 1:
         $('#the-player').html($("textarea.embed-code-red").val());
@@ -39,6 +43,11 @@ $('.playlistbutton').click(function () {
     }
 });
 
+$(".bars").on("click", function(event){
+    event.preventDefault();
+    $.post("/api/moods/")
+})
+ 
 
 // $('bars').on('click',function(){
 //     $(this).css('color','red').siblings('').css('color','black');
@@ -355,4 +364,6 @@ $('.bars').click(function () {
 // $("#greyRect").mouseover(function(){
 //     $("#currentMood").text("Sad");
 // });
+
+// module.exports = c;
 
