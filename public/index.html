@@ -212,11 +212,11 @@
            
         <div class="topheader"><h2>What color mood are you? <span id="currentMood"></span></h2></div>
 
-<div id="colors">
+<div id="colors" class="colors">
     <!-- red -->
     <div id="redRect" class="bars">
         <div style="height: 122px; width: 40px;"></div>
-          <div class="redBlocks">
+          <div id="redRectInner" class="redBlocks">
             <div class="redBlock"></div>
             <div class="redBlock"></div>
             <div class="redBlock"></div>
@@ -357,16 +357,9 @@
     </div>
 
 </div>
-<div class="commentbox">
-    <div class="moodTextTitle"><p>Why are you feeling this way? <i>(optional)</i></p></div>
-    <div class="commentbox">
-    <div id="text" class="commenttext"><p class="moodText"></p></div>
-  
-    <div class="button">
-    <p><a href="#" class="btn-load-video">Load the playlist  </a></p>
+<div class="playlistbutton">
+    <p class="playlistbuttontext">Pick a mood and load a playlist</p>
     </div>
-  </div>
-</div>
 
           </div>
           <div class="col-lg-4 spotify" id="the-player"></div>
@@ -477,7 +470,16 @@
     </div>
 
     <!-- embed ref code -->
-<textarea class="embed-code" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX7gIoKXt0gmx" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
+<textarea class="embed-code-red" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWTlVPwioEa7F" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
+<textarea class="embed-code-pink" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWYBO1MoTDhZI" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
+<textarea class="embed-code-orange" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWSWboXWl2xwB" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
+<textarea class="embed-code-yellow" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DXdPec7aLTmlC" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
+<textarea class="embed-code-green" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWT7XSlwvR1ar" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
+<textarea class="embed-code-blue" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX76Wlfdnj7AP" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
+<textarea class="embed-code-purple" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/myplay.com/playlist/6KOPB3LWEklTcWeAzL9HVu" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
+<textarea class="embed-code-brown" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWTSPqolnbHgK" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
+<textarea class="embed-code-white" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX4sWSpwq3LiO" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
+<textarea class="embed-code-grey" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWSqBruwoIXkA" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
 
     <!-- End of embed ref code -->
     <footer class="sticky-footer">
