@@ -350,5 +350,5 @@ footer.sticky-footer {
   body.sidenav-toggled footer.sticky-footer {
     width: calc(100% - 55px); } }
 .spotify {
-  float: right;
+  padding-right: 70px
 }

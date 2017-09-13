@@ -68,7 +68,7 @@
                 <a href="https://www.spotify.com/us/">Spotify</a>
               </li>
               <li>
-                <a href="/data">Word Cloud</a>
+                <a href="/graph">Mood Graph</a>
               </li>
             </ul>
           </li>
@@ -93,13 +93,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-            <a class="nav-link" href="https://accounts.spotify.com/en/authorize?response_type=code&client_id=aa57db780ac34c78aa98edc911ae4125&scope=user-read-private%20user-read-email&redirect_uri=https:%2F%2Fmahdia93.github.io%2FAudioAura%2Fviews%2Findex.html&state=z82x2WmOu32n5LQe">
-              <i class="fa fa-spotify"></i>
-              <span class="nav-link-text">
-                Spotify login</span>
-            </a>
-          </li>
         </ul>
         <ul class="navbar-nav sidenav-toggler">
           <li class="nav-item">
@@ -109,83 +102,7 @@
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-           
-            <div class="dropdown-menu" aria-labelledby="messagesDropdown">
-              <h6 class="dropdown-header">New Messages:</h6>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <strong>David Miller</strong>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <strong>Jane Smith</strong>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <strong>John Doe</strong>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item small" href="#">
-                View all messages
-              </a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mr-lg-2" href="#" id="alertsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-fw fa-bell"></i>
-              <span class="d-lg-none">Alerts
-                <span class="badge badge-pill badge-warning">6 New</span>
-              </span>
-              <span class="new-indicator text-warning d-none d-lg-block">
-                <i class="fa fa-fw fa-circle"></i>
-                <span class="number">6</span>
-              </span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="alertsDropdown">
-              <h6 class="dropdown-header">New Alerts:</h6>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span class="text-success">
-                  <strong>
-                    <i class="fa fa-long-arrow-up"></i>
-                    Status Update</strong>
-                </span>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span class="text-danger">
-                  <strong>
-                    <i class="fa fa-long-arrow-down"></i>
-                    Status Update</strong>
-                </span>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span class="text-success">
-                  <strong>
-                    <i class="fa fa-long-arrow-up"></i>
-                    Status Update</strong>
-                </span>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item small" href="#">
-                View all alerts
-              </a>
-            </div>
-          </li>
+     
            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
             <a class="nav-link" href="https://accounts.spotify.com/en/authorize?response_type=code&client_id=aa57db780ac34c78aa98edc911ae4125&scope=user-read-private%20user-read-email&redirect_uri=https:%2F%2Fmahdia93.github.io%2FAudioAura%2Fviews%2Findex.html&state=z82x2WmOu32n5LQe">
               <i class="fa fa-spotify"></i>
@@ -208,7 +125,7 @@
 
         <!-- Icon Cards -->
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-7">
            
         <div class="topheader"><h2>What color mood are you? <span id="currentMood"></span></h2></div>
 
@@ -362,112 +279,10 @@
     </div>
 
           </div>
-          <div class="col-lg-4 spotify" id="the-player"></div>
+          <div class="col-lg-5 spotify" id="the-player"></div>
 
         </div>
-      <!-- feed list -->
-        <div class="card mb-3">
-              <div class="card-header">
-                <i class="fa fa-comments fa-fw"></i>
-                Feed Example
-              </div>
-              <div class="col-lg-12">
-                    <!-- /.panel -->
-                    <div class="chat-panel panel panel-default">
-                        <div class="panel-heading">
-                        
-                           
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <ul class="chat">
-                                <li class="left clearfix">
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Alex</strong>
-                                            <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                                            </small>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                             
-                                <li class="left clearfix">
-                                  
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Alex</strong>
-                                            <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.panel-body -->
-                        <div class="panel-footer">
-                            <div class="input-group">
-                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-warning btn-sm" id="btn-chat">
-                                        Send
-                                    </button>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- /.panel-footer -->
-                    </div>
-                    <!-- /.panel .chat-panel -->
-            </div>
-              <div class="card-footer small text-muted">
-                Update your mood
-              </div>
-            </div>
-        
-
-        <!-- Area Chart Example -->
-        <div class="card mb-3">
-          <div class="card-header">
-            <i class="fa fa-area-chart"></i>
-            Chart Example
-          </div>
-          <div class="card-body">
-            <canvas id="myAreaChart" width="100%" height="30"></canvas>
-          </div>
-          <div class="card-footer small text-muted">
-            Updated yesterday at 11:59 PM
-          </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-8">
-            <!-- Example word cloud -->
-            <div class="card mb-3">
-              <div class="card-header">
-      
-                Word Cloud
-              </div>
-              <div class="card-body">
-                <canvas id="myPieChart" width="100%" height="100"></canvas>
-                <img src="../public/img/stock-vector-design-word-cloud-collage-creative-business-concept-549886417.jpg" alt="Word Cloud">
-              </div>
-              <div class="card-footer small text-muted">
-                Updated yesterday at 11:59 PM
-              </div>
-            </div>
-            <!-- Example Notifications Card -->
-            
-      <!-- /.container-fluid -->
-    </div>
-    <!-- /.content-wrapper -->
-    </div>
+ 
 
     <!-- embed ref code -->
 <textarea class="embed-code-red" style="visibility: hidden"><iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWTlVPwioEa7F" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe></textarea>
